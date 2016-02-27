@@ -1,0 +1,32 @@
+.jumbotron{
+	background: #000011;
+	color: white;
+}
+
+.navbar, .navbar a{
+	background: #444444;
+	color: white;
+}
+
+.navbar a:hover, .nav > li > a:hover{
+	background: #333333;
+}
+
+.paper {
+	font-family: "Courier new";
+	font-size:13px; 
+	color: black;
+	min-height: 300px;
+}
+
+.paper i{
+	text-decoration: none;
+	color: gray;
+}
+
+.cursor{
+	color: black;
+	width: 10px;
+	height: 10px;
+	background: red;
+}
