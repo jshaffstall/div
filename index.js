@@ -16,7 +16,7 @@ function tic() {
 	else {
 		nge = tar.charAt(si-1);
 		if (nge == " ") {
-			pap.innerHTML = pH + "<span class='cursor'></span>";
+			pap.innerHTML = pH + "<span class='cursor'>|</span>";
 			pH += "&nbsp;";
 			setTimeout("P5();", 0);
 		}
@@ -27,7 +27,7 @@ function tic() {
 		else if (nge == "<") {
 			h = tar.substring(si-1,99999);
 			h = h.substring(0,h.indexOf(">")+1);
-			pap.innerHTML = pH + "<span class='cursor'></span>" + h;
+			pap.innerHTML = pH + "<span class='cursor'>|</span>" + h;
 			pH += h;
 			si += h.length-1;
 			setTimeout("P5();", 0);
@@ -57,8 +57,8 @@ function retic() {
 
 function P3() {
 	pH += nge;
-	pap.innerHTML = pH + "<span class='cursor'></span>";
-	setTimeout("P5();", 32);
+	pap.innerHTML = pH + "<span class='cursor'>|</span>";
+	setTimeout("P5();", 16);
 }
 
 function P5() {

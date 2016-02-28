@@ -1,5 +1,6 @@
 .jumbotron{
-	background: #000011;
+	background: url(divback.png) center no-repeat #000011;
+	background-size: 100%;
 	color: white;
 }
 
@@ -16,7 +17,7 @@
 	font-family: "Courier new";
 	font-size:13px; 
 	color: black;
-	min-height: 300px;
+	min-height: 200px;
 }
 
 .paper i{

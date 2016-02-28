@@ -66,28 +66,35 @@
 	</div>
  </div>
 
-<input type="hidden" id ="paper_number_max" value="2">
+<input type="hidden" id ="paper_number_max" value="3">
 
 <pre id="txt-1" style="display:none;">
 &lt;?php
+include <i>"div.php"</i>;
 
-<b>include</b> <i>"div.php"</i>;
-
-echo <b>new</b> div("Hello {$name}", array(
-	"name" =&gt; "Rafa"
+<b>echo</b> <b>new</b> div(<i>"index.tpl"</i>, <b>array</b>( 
+&nbsp;&nbsp;&nbsp;<i>"name"</i> => <i>"Peter"</i>
 ));
-
 </pre> 
  
 <pre id="txt-2" style="display:none;">
-&lt;?php
+This is a template example with 
+a simple replacement. The variable 
+is "name" and the sintax is:
 
-include "div.php";
+<b>{$</b><i>variable</i><b>}</b>.
 
-echo <b>new</b> div("index.tpl", "index.json");
-
+Hello {$name}
 </pre> 
  
+<pre id="txt-3" style="display:none;">
+?$login
+	Show login form
+@else@
+	Show content
+$login?
+
+</pre>  
 <div class="container">
 <h1>Overview</h1>
 	<p>
@@ -103,10 +110,10 @@ echo <b>new</b> div("index.tpl", "index.json");
 	<div class="panel-body">
 		<pre>
 &lt;?php
-include "div.php";
+include <i>"div.php"</i>;
 
-echo new div("index.tpl", array( 
-	"name" => "Peter"
+<b>echo</b> <b>new</b> div(<i>"index.tpl"</i>, <b>array</b>( 
+	<i>"name"</i> => <i>"Peter"</i>
 ));
 </pre>
 	</div>
@@ -155,11 +162,11 @@ Hello Peter
 	</div>
 	<div class="panel-body">
 		<pre>
-?$show
-	Show this part
+?$login
+	Show login form
 @else@
-	Dont show this part
-$show?
+	Show content
+$login?
 
 </pre>
 	</div>
